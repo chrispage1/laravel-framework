@@ -480,6 +480,18 @@ class Arr
     }
 
     /**
+     * Get a new arrayable object from the given array.
+     *
+     * @param $array
+     * @return Arrayable
+     */
+    public static function of($array): Arrayable
+    {
+        return new Arrayable($array);
+    }
+
+
+    /**
      * Get a subset of the items from the given array.
      *
      * @param  array  $array
